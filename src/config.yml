@@ -1,0 +1,11 @@
+spiders:
+  e_comm:
+    - name: amazon_spider
+      type: SpecificSpider
+      domain: amazon.com
+      module: e_comm.amazon_spider
+
+    - name: walmart_spider
+      type: SpecificSpider
+      module: e_comm.walmart_spider
+      domain: walmart.com
