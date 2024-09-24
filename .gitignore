@@ -131,3 +131,17 @@ dmypy.json
 
 #vscode
 .vscode/
+#intelij
+.idea/
+#pycharm
+*.iml
+*.ipr
+
+# ignore data
+data/
+dumps/
+
+# reacjs
+node_modules/
+build/
+dist/

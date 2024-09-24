@@ -1,11 +1,42 @@
 spiders:
   e_comm:
-    - name: amazon_spider
-      type: SpecificSpider
-      domain: amazon.com
-      module: e_comm.amazon_spider
-
-    - name: walmart_spider
-      type: SpecificSpider
-      module: e_comm.walmart_spider
-      domain: walmart.com
+    - name: "amazon_spider"
+      type: "SpecificSpider"
+      domain: "amazon.com"
+      module: "spiders.categories.e_comm.amazon_spider"
+    - name: "walmart_spider"
+      type: "SpecificSpider"
+      domain: "walmart.com"
+      module: "spiders.categories.e_comm.walmart_spider"
+    - name: "aldi_spider"
+      type: "SpecificSpider"
+      domain: "aldi.us"
+      module: "spiders.categories.e_comm.aldi_spider"
+    - name: "bjs_spider"
+      type: "SpecificSpider"
+      domain: "bjs.com"
+      module: "spiders.categories.e_comm.bjs_spider"
+    - name: "costco_spider"
+      type: "SpecificSpider"
+      domain: "costco.com"
+      module: "spiders.categories.e_comm.costco_spider"
+    - name: "harristeeter_spider"
+      type: "SpecificSpider"
+      domain: "harristeeter.com"
+      module: "spiders.categories.e_comm.harristeeter_spider"
+    - name: "lidl_spider"
+      type: "SpecificSpider"
+      domain: "lidl.com"
+      module: "spiders.categories.e_comm.lidl_spider"
+    - name: "safeway_spider"
+      type: "SpecificSpider"
+      domain: "safeway.com"
+      module: "spiders.categories.e_comm.safeway_spider"
+    - name: "sprouts_spider"
+      type: "SpecificSpider"
+      domain: "shop.sprouts.com"
+      module: "spiders.categories.e_comm.sprouts_spider"
+    - name: "wegmans_spider"
+      type: "SpecificSpider"
+      domain: "shop.wegmans.com"
+      module: "spiders.categories.e_comm.wegmans_spider"

@@ -20,16 +20,35 @@ def extract_domain_name(url):
         return parts[0]
 
 
+def extract_full_domain(url):
+    """Extracts the full domain name from a given URL, including subdomains but without the scheme or path."""
+    parsed_url = urlparse(url)
+    domain = parsed_url.netloc
+
+    # Remove 'www.' if present
+    if domain.startswith('www.'):
+        domain = domain[4:]
+
+    return domain
+
+
 if __name__ == "__main__":
 
     # Example usage:
     urls = [
-        'https://www.amazon.com/product/B07PGL2N7J',
-        'http://blog.example.co.uk/some-post/',
-        'https://example.com',
-        'ftp://ftp.example.com/file.txt',
-        'https://www.google.co.uk/search?q=test'
+        "https://www.wholefoodsmarket.com/",
+        "https://www.aldi.us/",
+        "https://www.lidl.com/",
+        "https://www.wegmans.com/",
+        "https://www.harristeeter.com/",
+        "https://www.safeway.com/",
+        "https://giantfood.com/",
+        "https://www.costco.com/",
+        "https://www.bjs.com/",
+        "https://www.walmart.com",
+        "https://www.sprouts.com",
+
     ]
 
-for url in urls:
-    print(f"URL: {url} -> Domain Name: {extract_domain_name(url)}")
+    for url in urls:
+        print(f"URL: {url} -> Domain Name: {extract_full_domain(url)}")

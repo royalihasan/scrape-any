@@ -1,17 +1,20 @@
-version: "3"
-services:
-  redis:
-    container_name: redis
-    hostname: redis
-    image: redis
+# servrices psql
 
-  redis-commander:
-    container_name: redis-commander
-    hostname: redis-commander
-    image: ghcr.io/joeferner/redis-commander:latest
+version: '3.9'
+
+services:
+  psql:
+    image: postgres:latest
+    container_name: psql
     restart: always
     environment:
-      - REDIS_HOSTS=local:redis:6379
+      POSTGRES_USER: scrapy
+      POSTGRES_PASSWORD: scrapy
+      POSTGRES_DB: e_commerce
+     # access throught docker shell
+
     ports:
-      - "8081:8081"
-    user: redis
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    
