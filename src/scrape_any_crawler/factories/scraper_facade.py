@@ -87,8 +87,8 @@ class ScraperFacade:
                         yield f"No new logs found for {spider_name}\n"
 
                     # Check if 10 seconds have passed without new logs
-                    if time.time() - start_time > 10:
-                        yield "Stopped due to inactivity. No new logs found for 10 seconds.\n"
+                    if time.time() - start_time > 20:
+                        yield "Stopped due to inactivity. No new logs found for 20 seconds.\n"
                         return
         except Exception as e:
             yield f"Error streaming logs: {e}\n"

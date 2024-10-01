@@ -14,17 +14,6 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
 
-# User agent
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-
-
-# SCRAPEOPS_API_KEY = 'd3085d77-e3cb-4c71-ac13-352863d4a84c'
-# SCRAPEOPS_PROXY_ENABLED = True
-
-# DOWNLOADER_MIDDLEWARES = {
-#     'scrapeops_scrapy_proxy_sdk.scrapeops_scrapy_proxy_sdk.ScrapeOpsScrapyProxySdk': 725,
-# }
-
 
 # playwright settings
 DOWNLOAD_HANDLERS = {

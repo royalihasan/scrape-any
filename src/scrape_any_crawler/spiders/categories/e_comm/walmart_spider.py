@@ -26,7 +26,7 @@ class WalmartSpider(scrapy.Spider):
         'ITEM_PIPELINES': {
             'scrape_any_crawler.pipe.e_comm_psql_pipe.PostgresPipeline': 300,
         },
-        # 'SCRAPEOPS_API_KEY': '0f49b1a1-3a81-4846-9d5a-bc1d1ce85e9a',
+        # 'SCRAPEOPS_API_KEY': '7e0c88d8-0221-4b51-a67f-faec12d61a19',
         # 'SCRAPEOPS_PROXY_ENABLED': True,
         # 'CONCURRENT_REQUESTS': 1,
 
