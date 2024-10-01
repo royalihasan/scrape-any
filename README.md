@@ -128,11 +128,18 @@ The project includes a user-friendly interface for controlling the scraper. Once
 ```
 http://localhost:5173
 ```
+### Sample Urls to Scrape
+- `https://www.walmart.com/browse/electronics/3944`
+- `https://shop.wegmans.com/shop/categories/216`
+- `https://shop.sprouts.com/shop/categories/124`
+- `ttps://www.aldi.us/products/snacks`
 
 ### Using the UI
 1. Enter the URL of the website you want to scrape in the input box.
 2. Click the "Start Scraping" button to begin the scraping process.
 3. You will be able to monitor the progress through the logs.
+
+
 
 ---
 
