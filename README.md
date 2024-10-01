@@ -1,6 +1,5 @@
 Here's the updated `README.md` with your specified instructions for Playwright installation:
 
-```markdown
 # Project: Scrape-Any
 
 This project is a web scraper built using Scrapy for collecting product data from e-commerce websites. It integrates with a PostgreSQL database to store pricing and product details and features a UI for controlling and monitoring the scraping process.
@@ -180,6 +179,4 @@ Log files are generated during the scraping process. Each spider has its own log
 Ensure that the PostgreSQL service is running before starting the scraper to avoid connection issues. If using Docker, remember to start the container before executing the scraper.
 
 ---
-```
 
-Feel free to copy and paste this content into your `README.md` file!
