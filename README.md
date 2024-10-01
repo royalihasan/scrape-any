@@ -1,4 +1,6 @@
+Here's the updated `README.md` with your specified instructions for Playwright installation:
 
+```markdown
 # Project: Scrape-Any
 
 This project is a web scraper built using Scrapy for collecting product data from e-commerce websites. It integrates with a PostgreSQL database to store pricing and product details and features a UI for controlling and monitoring the scraping process.
@@ -38,12 +40,31 @@ pip install -r requirements.txt
 The main dependencies include:
 
 - `Scrapy==2.11.2`: The web scraping framework.
+- `scrapy-playwright==0.0.41`: Playwright integration for Scrapy.
 - `PyYAML==6.0.2`: For handling YAML configuration.
 - `psycopg2-binary==2.9.1`: PostgreSQL adapter for Python.
 - `price-parser==0.3.4`: For parsing pricing information.
 - `Flask==3.0.3`: For the backend server.
 - `Flask-Cors==5.0.0`: For handling CORS in the backend.
 
+### Installing Playwright
+To install Playwright, run the following command:
+
+```bash
+pip install scrapy-playwright
+```
+
+Playwright is defined as a dependency, so it gets installed automatically. However, it might be necessary to install the specific browser(s) that will be used:
+
+```bash
+playwright install
+```
+
+You can also install only a subset of the available browsers by specifying them:
+
+```bash
+playwright install firefox chromium
+```
 
 ---
 
@@ -102,7 +123,8 @@ To set up PostgreSQL using Docker:
 
 This will start a PostgreSQL instance with the necessary configurations. Make sure PostgreSQL is running before you start the scraper.
 
----
+
+
 
 ## 3. Running the Scraper
 
@@ -128,18 +150,17 @@ The project includes a user-friendly interface for controlling the scraper. Once
 ```
 http://localhost:5173
 ```
-### Sample Urls to Scrape
+
+### Sample URLs to Scrape
 - `https://www.walmart.com/browse/electronics/3944`
 - `https://shop.wegmans.com/shop/categories/216`
 - `https://shop.sprouts.com/shop/categories/124`
-- `ttps://www.aldi.us/products/snacks`
+- `https://www.aldi.us/products/snacks`
 
 ### Using the UI
 1. Enter the URL of the website you want to scrape in the input box.
 2. Click the "Start Scraping" button to begin the scraping process.
 3. You will be able to monitor the progress through the logs.
-
-
 
 ---
 
@@ -158,3 +179,7 @@ Log files are generated during the scraping process. Each spider has its own log
 ### Database Management
 Ensure that the PostgreSQL service is running before starting the scraper to avoid connection issues. If using Docker, remember to start the container before executing the scraper.
 
+---
+```
+
+Feel free to copy and paste this content into your `README.md` file!
