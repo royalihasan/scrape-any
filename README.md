@@ -1,5 +1,3 @@
-Here's the updated `README.md` with your specified instructions for Playwright installation:
-
 # Project: Scrape-Any
 
 This project is a web scraper built using Scrapy for collecting product data from e-commerce websites. It integrates with a PostgreSQL database to store pricing and product details and features a UI for controlling and monitoring the scraping process.
